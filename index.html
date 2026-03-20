@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CHIBICZ</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      body {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
+      }
+
+      .loaded body {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css?_v=20250125152740" />
+    <link rel="icon" href="assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="menu-open-bg"></div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <a href="../" class="header__logo">
+              <img src="img/logo.png" alt="Logo" />
+            </a>
+            <div class="header__social" data-da=".menu__body, 767.98">
+              <a
+                href="https://t.me/ChibiCZ"
+                target="_blank"
+                class="header__social-item"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.7767 4.42997C20.0238 4.32596 20.2943 4.29008 20.5599 4.32608C20.8256 4.36208 21.0768 4.46863 21.2873 4.63465C21.4979 4.80067 21.6601 5.02008 21.757 5.27005C21.854 5.52002 21.8822 5.79141 21.8387 6.05597L19.5707 19.813C19.3507 21.14 17.8947 21.901 16.6777 21.24C15.6597 20.687 14.1477 19.835 12.7877 18.946C12.1077 18.501 10.0247 17.076 10.2807 16.062C10.5007 15.195 14.0007 11.937 16.0007 9.99997C16.7857 9.23897 16.4277 8.79997 15.5007 9.49997C13.1987 11.238 9.50265 13.881 8.28065 14.625C7.20265 15.281 6.64065 15.393 5.96865 15.281C4.74265 15.077 3.60565 14.761 2.67765 14.376C1.42365 13.856 1.48465 12.132 2.67665 11.63L19.7767 4.42997Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://x.com/ChibiCZ"
+                target="_blank"
+                class="header__social-item"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_724_5659)">
+                    <path
+                      d="M18.901 2.15332H22.581L14.541 11.3433L24 23.8463H16.594L10.794 16.2623L4.156 23.8463H0.474L9.074 14.0163L0 2.15432H7.594L12.837 9.08632L18.901 2.15332ZM17.61 21.6443H19.649L6.486 4.24032H4.298L17.61 21.6443Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_724_5659">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a
+                href="https://www.dextools.io/app/en/bnb/pair-explorer/0xcomingsoon"
+                target="_blank"
+                class="header__social-item"
+              >
+                <img src="/img/dextools.png" style="width: 24px; height: 24px;" />
+              </a>
+            </div>
+            <div class="header__menu menu">
+              <button type="button" class="menu__icon icon-menu">
+                <span></span>
+              </button>
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".about"
+                      data-text="About"
+                      class="menu__link"
+                      >About</a
+                    >
+                  </li>
+                  <li class="menu__item logo">
+                    <a href="../" class="menu__logo-link">
+                      <img src="img/logo.png" alt="Logo" />
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".roadmap"
+                      data-goto-top="60"
+                      data-text="How to Buy"
+                      class="menu__link"
+                      >How to Buy</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <a
+              href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+              target="_blank"
+              class="header__buy"
+              data-da=".menu__body, 767.98"
+              >Buy Now!</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__bg">
+            <img id="heroBg" src="img/hero/bg.jpg" alt="BG" />
+            <img id="heroBg2" src="img/hero/front.png" alt="BG" />
+          </div>
+          <div class="hero__container">
+            <h1 id="heroTitle" class="hero__title">
+              <!-- <img src="img/hero/title.png" alt="EUPHORIA" /> -->
+            </h1>
+            <div class="hero__body">
+              <div id="heroImages" class="hero__images">
+                <div class="hero__image p1">
+                  <img src="img/hero/p1.png" alt="Image" />
+                </div>
+                <div class="hero__image p2">
+                  <img src="img/hero/p2.png" alt="Image" />
+                </div>
+                <!-- <div class="hero__image p3">
+                  <img src="img/hero/p3.png" alt="Image" />
+                </div> -->
+                <div class="hero__image p4">
+                  <img src="img/hero/p4.png" alt="Image" />
+                </div>
+              </div>
+              <div id="heroActions" class="hero__actions">
+                <div class="hero__socail">
+                  <a
+                    href="https://x.com/ChibiCZ"
+                    target="_blank"
+                    class="hero__social-item x"
+                  >
+                    <img src="img/hero/x.png" alt="X" />
+                  </a>
+                  <a
+                    href="https://t.me/ChibiCZ"
+                    target="_blank"
+                    class="hero__social-item tel"
+                  >
+                    <img src="img/hero/tel.png" alt="Telegram" />
+                  </a>
+                </div>
+                <a
+                  href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+                  target="_blank"
+                  class="hero__buy"
+                >
+                  <img src="img/hero/buy.png" alt="Buy Now" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__about about" data-watch="navigator">
+          <div class="about__top top-about" data-prlx-parent>
+            <div class="top-about__bg">
+              <img src="img/about/top.svg" alt="BG" />
+            </div>
+            <div class="top-about__container" data-prlx>
+              <h1 class="top-about__title">
+                Welcome to CHIBICZ More Than a Memecoin It’s a Cult!
+              </h1>
+              <div class="top-about__text">
+                At CHIBICZ, we’re all about chasing that charismatic,
+                heart-pounding rush of the crypto ride. This isn’t just another
+                memecoin—it’s an all-out movement fueled by pure hype and wild
+                energy. We’ve built a space where everyone can tap into the buzz
+                and feel the CHIBICZ together.
+              </div>
+              <div class="top-about__buttons">
+                <button class="top-about__button" id="copyCAButton">
+                  <span>CA:</span>
+                  <span id="caValue"
+                    >0xcomingsoon</span
+                  >
+                </button>
+                <a
+                  href="https://www.dextools.io/app/en/bnb/pair-explorer/0xcomingsoon"
+                  target="_blank"
+                  class="top-about__button"
+                  >Chart</a
+                >
+              </div>
+              <div class="top-about__supply">
+                <img src="img/about/supply.png" alt="Image" />
+              </div>
+            </div>
+          </div>
+          <div class="about__bottom bottom-about" data-prlx-parent>
+            <div class="bottom-about__bg">
+              <img src="img/about/bottom.svg" alt="BG" />
+            </div>
+            <div class="bottom-about__container">
+              <div class="bottom-about__column">
+                <div class="bottom-about__image-left">
+                  <img src="img/about/p1.png" alt="Image" />
+                </div>
+              </div>
+              <div class="bottom-about__column">
+                <div class="bottom-about__image-right">
+                  <img src="img/about/p2.png" alt="Image" />
+                </div>
+                <div class="bottom-about__content" data-prlx>
+                  <h3 class="bottom-about__content-title">
+                    What Is <br />
+                    CHIBICZ?
+                  </h3>
+                  <div class="bottom-about__content-text">
+                    <p>
+                      “CHIBICZ” — a fun word born from Binance culture, meaning approval, vibes, and good energy. 💛
+                      It started as a meme, a reaction, and now it’s becoming a token — a story of how fun meets community.
+                      This is not an endorsement. It’s pure crypto joy. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__feature feature" data-prlx-parent>
+          <div class="feature__bg">
+            <img src="img/feature/bg.png" alt="Image" />
+          </div>
+          <div class="feature__container">
+            <div class="feature__column" data-prlx>
+              <h2 class="feature__title">ROADMAP</h2>
+              <div class="feature__items"> 
+                <div class="feature__item"> 
+                  <h3>PHASE 1</h3>
+                  <p>
+                    – Token Launched<br />
+                    – Contract Verified<br />
+                    – DEXTools & Dexscreener Socials Updated<br />
+                    – CMC & CG Applications
+                  </p>
+                </div>
+                <div class="feature__item">
+                  <h3>PHASE 2</h3>
+                  <p>
+                    – CMC & CG Listings<br />
+                    - Marketing Campaigns Kick Off<br />
+                    – Tier 3 CEX Listings
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature__image"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <video src="/pp.mp4" width="50%" autoplay muted loop></video>
+            </div>
+            <div class="feature__column" data-prlx>
+              <div class="feature__items">
+                <div class="feature__item">
+                  <h3>PHASE 3</h3>
+                  <p>
+                    – Tier 2 CEX Listings<br />
+                    – Strategic Partnerships
+                  </p>
+                </div>
+                <div class="feature__item">
+                  <h3>PHASE 4</h3>
+                  <p>
+                    – Tier 1 CEX Listings<br />
+                    – Time to Build
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="feature__image-mob"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <!-- <video src="/pp.mp4" width="50%" autoplay muted loop></video> -->
+          </div>
+        </section>
+        <section
+          class="page__roadmap roadmap"
+          data-watch="navigator"
+          data-prlx-parent
+        >
+          <div class="roadmap__container">
+            <div class="roadmap__body" data-prlx>
+              <h1 class="roadmap__title">How to Buy</h1>
+              <div class="roadmap__items">
+                <article class="roadmap__item">
+                  <h3>step 1</h3>
+                  <p>
+                    Download a crypto wallet like MetaMask and set it up to
+                    interact with the BSC. Ensure your wallet is funded with BNB
+                    for purchasing $CHIBICZ Coin and covering transaction fees.
+                  </p>
+                </article>
+                <article class="roadmap__item">
+                  <h3>step 2</h3>
+                  <p>
+                    Go to a popular DEX such as Pancakeswap and connect your
+                    wallet. Search for $CHIBICZ Coin using its contract address to
+                    ensure you are buying the correct token.
+                  </p>
+                </article>
+                <article class="roadmap__item">
+                  <h3>step 3</h3>
+                  <p>
+                    Enter the amount of BNB you wish to swap for $CHIBICZ Coin,
+                    review the transaction details, and confirm the swap. After
+                    a short processing time, $CHIBICZ will appear in your wallet.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page__join join">
+          <div class="join__bg">
+            <img src="img/join/bg.png" alt="BG" />
+            <img src="img/join/bg-mob.png" alt="BG" />
+          </div>
+          <div class="join__container">
+            <a
+              href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+              target="_blank"
+              class="join__buy"
+            >
+              <img src="img/join/buy.svg" alt="Buy Now" />
+            </a>
+            <div class="join__social">
+              <a
+                href="https://x.com/ChibiCZ"
+                target="_blank"
+                class="join__social-item x"
+              >
+                <img src="img/join/x.svg" alt="X" />
+              </a>
+              <a
+                href="https://t.me/ChibiCZ"
+                target="_blank"
+                class="join__social-item tel"
+              >
+                <img src="img/join/tel.svg" alt="Telegram" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <span>2026 © ALL RIGHTS RESERVED</span>
+          <!-- <a href="https://t.me/osnovoco" target="_blank">
+            <span>Designed by</span>
+            <img src="img/osnovo.svg" alt="Osnovo" />
+          </a> -->
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.min.js?_v=20250125152740"></script>
+  </body>
+</html>
